@@ -9,13 +9,14 @@ Docker WeChat is a Ubuntu based Docker image that has the latest [Linux WeChat](
 ### Build Docker Image
 
 ```bash
-docker build -f docker/wechat.Dockerfile --tag=wechat:0.0.1 .
+$ docker build -f docker/wechat.Dockerfile --tag=wechat:0.0.1 .
 ```
 
 ### Run Docker WeChat
 
 ```bash
-docker run \
+$ xhost +
+$ docker run \
     -it \
     --rm \
     --ipc=host \
@@ -27,6 +28,7 @@ docker run \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v $HOME/.config/weixin:/root/.config/weixin \
     wechat:0.0.1
+$ xhost -
 ```
 
 ## FAQs
