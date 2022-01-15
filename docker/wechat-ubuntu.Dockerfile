@@ -14,6 +14,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         gnupg
 RUN apt-get clean
 
+ENV LC_ALL zh_CN.UTF-8
+ENV LANG zh_CN.UTF-8
+ENV LANGUAGE zh_CN.UTF-8
+
+RUN apt-get update && apt-get install -y \
+        locales \
+        locales-all \
+        fcitx-libs-dev \
+        fcitx-bin \
+        fcitx-googlepinyin \
+        fcitx \
+        fcitx-ui-qimpanel \
+        fcitx-sunpinyin \
+        dbus-x11 \
+        im-config
+RUN apt-get clean
+
 # [UbuntuKylin](https://www.ubuntukylin.com/) is a Chinese Ubuntu derivative.
 RUN echo "deb http://archive.ubuntukylin.com/ubuntukylin focal-partner main" > /etc/apt/sources.list.d/wechat.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 56583E647FFA7DE7
@@ -24,18 +41,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         chinese*
 RUN apt-get clean
 
+# ENV XMODIFIERS="@im=fcitx"
+# ENV QT_IM_MODULE="fcitx"
+# ENV GTK_IM_MODULE="fcitx"
 
-RUN apt-get update && apt-get install -y locales locales-all fcitx-libs-dev fcitx-bin fcitx-googlepinyin
-ENV LC_ALL zh_CN.UTF-8
-ENV LANG zh_CN.UTF-8
-ENV LANGUAGE zh_CN.UTF-8
-# LC_ALL=zh_CN.UTF-8
-
-ENV XMODIFIERS="@im=fcitx"
-ENV QT_IM_MODULE="fcitx"
-ENV GTK_IM_MODULE="fcitx"
-
-RUN apt-get update && apt-get install -y fcitx fcitx-ui-qimpanel fcitx-sunpinyin fcitx-googlepinyin
+ENV GTK_IM_MODULE=fcitx
+ENV QT_IM_MODULE=fcitx
+ENV XMODIFIERS=@im=fcitx
+ENV DefaultIMModule=fcitx
 
 #     -e XMODIFIERS="@im=fcitx" \
 #     -e QT_IM_MODULE="fcitx" \
