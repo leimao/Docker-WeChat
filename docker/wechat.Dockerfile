@@ -2,7 +2,6 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install package dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         locales \
@@ -32,10 +31,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         fonts-wqy-zenhei \
         xfonts-wqy
 RUN apt-get clean
-
-# ENV XMODIFIERS="@im=fcitx"
-# ENV QT_IM_MODULE="fcitx"
-# ENV GTK_IM_MODULE="fcitx"
 
 ENV LC_ALL en_US.UTF-8
 # ENV LC_ALL zh_CN.UTF-8
