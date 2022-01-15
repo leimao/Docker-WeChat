@@ -33,11 +33,11 @@ docker run \
 
 ### Does This Docker WeChat Work?
 
-As of 1/15/2022, this Docker WeChat works fine.
+As of 1/15/2022, this Docker WeChat still works fine.
 
 ### Difference to Other Docker WeChat
 
-The WeChat in other Docker WeChats is usually emulated with Wine, whereas the WeChat in this Docker WeChat is build natively on Linux.
+The WeChat in other Docker WeChat is usually emulated with Wine, whereas the WeChat in this Docker WeChat is build natively on Linux.
 
 ### Cannot Change Input Methods
 
