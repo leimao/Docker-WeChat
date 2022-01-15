@@ -37,4 +37,4 @@ The WeChat in other Docker WeChats is usually emulated with Wine, whereas the We
 
 ### Cannot Change Input Methods
 
-Other Wine based [Docker WeChat](https://hub.docker.com/r/bestwu/wechat/) does not have the issue with fcitx input methods. However, fcitx input methods does not work for Docker WeChat, preventing the user from entering Chinese.
+Other Wine based [Docker WeChat](https://hub.docker.com/r/bestwu/wechat/) does not have the issue with fcitx input methods. However, fcitx input methods does not work for Docker WeChat, preventing the user from entering Chinese. Please contribute if you know the solution to this issue.
