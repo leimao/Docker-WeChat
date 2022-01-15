@@ -12,6 +12,12 @@ Docker WeChat is a Ubuntu based Docker image that has the latest [Linux WeChat](
 $ docker build -f docker/wechat.Dockerfile --tag=wechat:0.0.1 .
 ```
 
+Alternatively, the prebuilt Docker image could be pulled from Docker Hub.
+
+```bash
+$ docker pull leimao/wechat:0.0.1
+```
+
 ### Run Docker WeChat
 
 ```bash
