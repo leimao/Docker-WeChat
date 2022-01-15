@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Docker WeChat is a Ubuntu based Docker image that has Linux WeChat installed. 
+Docker WeChat is a Ubuntu based Docker image that has the latest [Linux WeChat](https://www.ubuntukylin.com/applications/106-cn.html) installed. 
 
 ## Usages
 
@@ -30,6 +30,10 @@ docker run \
 ```
 
 ## FAQs
+
+### Does This Docker WeChat Work?
+
+As of 1/15/2022, this Docker WeChat works fine.
 
 ### Difference to Other Docker WeChat
 
