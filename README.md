@@ -37,7 +37,7 @@ As of 1/15/2022, this Docker WeChat still works fine.
 
 ### Difference to Other Docker WeChat
 
-The WeChat in other Docker WeChat is usually emulated with Wine, whereas the WeChat in this Docker WeChat is build natively on Linux.
+The WeChat in other Docker WeChat is usually emulated with Wine, whereas the WeChat in this Docker WeChat is build natively on Linux. The advantages of this Docker WeChat compared to the Wine emulated WeChat is that this Docker WeChat has fewer dependencies and the configuration is much easier.
 
 ### Cannot Change Input Methods
 
