@@ -16,6 +16,7 @@ Alternatively, the prebuilt Docker image could be pulled from Docker Hub.
 
 ```bash
 $ docker pull leimao/wechat:0.0.1
+$ docker tag leimao/wechat:0.0.1 wechat:0.0.1
 ```
 
 ### Run Docker WeChat
