@@ -4,6 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
+        ca-certificates \
         locales \
         locales-all \
         gnupg \
@@ -32,12 +33,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         xfonts-wqy
 RUN apt-get clean
 
-ENV LC_ALL en_US.UTF-8
-# ENV LC_ALL zh_CN.UTF-8
-ENV LANG en_US.UTF-8
+ENV LC_ALL zh_CN.UTF-8
 ENV LANG zh_CN.UTF-8
 ENV LANGUAGE en_US.UTF-8
-ENV LANGUAGE zh_CN.UTF-8
 
 ENV GTK_IM_MODULE=fcitx
 ENV QT_IM_MODULE=fcitx
